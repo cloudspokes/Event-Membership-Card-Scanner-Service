@@ -1,4 +1,4 @@
-Development Node.js server to be used for "faking" calls to SFDC. Simply returns JSON for common calls to SFDC instead.
+Development service for event membership barcode scanner application.
 
 Installation:
 
