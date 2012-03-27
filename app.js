@@ -83,9 +83,9 @@ console.log(req.body);
 
 	res.end(body);
 	
-	//curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"guests":5}'  http://localhost:3001/visitations/20121125/1
+	// curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"guests":5}'  http://localhost:3001/visitations/20121125/1
 
  });
 
-app.listen(3001);
+app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
