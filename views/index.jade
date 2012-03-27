@@ -1,0 +1,9 @@
+h1= title
+p Welcome to the Event Membership Card Scanner service! The server returns JSON payloads for endpoints specified in the challenge:
+ul
+  li: a(href='/members/1') MemberId = 1 (membership expired)
+  li: a(href='/members/2') MemberId = 2 (membership current)
+  li: a(href='/members?fname=foo&lname=Smith&zip=12345') Search by last name 'Smith'
+  li: a(href='/members?fname=foo&lname=Thompson&zip=11111') Search by zip '11111'
+
+p You can also post visitation data: curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"guests":5}'  http://[THIS-HOST]/visitations/20121125/1
