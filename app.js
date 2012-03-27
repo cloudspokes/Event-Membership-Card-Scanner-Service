@@ -74,7 +74,6 @@ app.get('/members/:id', function(req, res){
 
 app.post('/visitations/:date/:id', function(req, res){
 
-console.log(req.body);
 	var output = '{ "message": "success", "guests": '+req.body.guests+'}';
 	var body = JSON.stringify(output);
 	res.writeHead(200, {
