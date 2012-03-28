@@ -6,4 +6,4 @@ ul
   li: a(href='/members?fname=foo&lname=Smith&zip=12345') Search by last name 'Smith'
   li: a(href='/members?fname=foo&lname=Thompson&zip=11111') Search by zip '11111'
 
-p You can also post visitation data: curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"guests":5}'  http://event-scanner-service.herokuapp.com/visitations/20121125/1
+p You can also post visitation data: curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"guests":5, "warmup": true}'  http://event-scanner-service.herokuapp.com/visitations/20121125/1
